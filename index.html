@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techora | Modern Web Services Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Calendly widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Techora<span class="logo-dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#why">Why Techora</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn-nav" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/techora-demo/30min'});">Book a Meeting</button></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-tag">Modern Digital Solutions</div>
+                <h1 class="hero-title">Crafting <span class="highlight">Exceptional</span> Digital Experiences</h1>
+                <p class="hero-subtitle">We build fast, beautiful, and functional websites and web applications that drive business growth and engage audiences.</p>
+                <div class="hero-cta">
+                    <button class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/techora90/30min'});">
+                        <span>Book a Meeting</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <a href="#projects" class="btn-secondary">
+                        <span>View Projects</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes" id="threejs-container"></div>
+                <div class="hero-image-overlap">
+                    <div class="image-placeholder" data-text="Performance Optimized"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <p class="section-subtitle">Comprehensive web solutions tailored to your business needs</p>
+        </div>
+        <div class="services-container">
+            <div class="services-track">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-description">Custom websites with modern technologies, responsive design, and optimal performance.</p>
+                    <div class="service-features">
+                        <span>React/Vue</span>
+                        <span>Responsive</span>
+                        <span>SEO Ready</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Web App Development</h3>
+                    <p class="service-description">Scalable web applications with intuitive interfaces and robust backend architecture.</p>
+                    <div class="service-features">
+                        <span>Node.js</span>
+                        <span>APIs</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">User-centered design that enhances engagement and drives conversions.</p>
+                    <div class="service-features">
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                        <span>User Testing</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Performance Optimization</h3>
+                    <p class="service-description">Speed optimization, code splitting, and caching strategies for maximum performance.</p>
+                    <div class="service-features">
+                        <span>Core Web Vitals</span>
+                        <span>Lazy Loading</span>
+                        <span>CDN Setup</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <h3 class="service-title">Ongoing Support</h3>
+                    <p class="service-description">Continuous maintenance, updates, and technical support for your digital products.</p>
+                    <div class="service-features">
+                        <span>Security Updates</span>
+                        <span>Bug Fixes</span>
+                        <span>24/7 Monitoring</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-scroll-hint">
+                <span>Scroll horizontally</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="process-container">
+            <div class="process-visual">
+                <div class="process-line">
+                    <div class="process-dot active" data-step="1"></div>
+                    <div class="process-dot" data-step="2"></div>
+                    <div class="process-dot" data-step="3"></div>
+                    <div class="process-dot" data-step="4"></div>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step active" data-step="1">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Discover</h3>
+                        <p class="step-description">We analyze your business goals, target audience, and technical requirements to create a strategic roadmap.</p>
+                    </div>
+                    <div class="process-step" data-step="2">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-description">Creating wireframes, prototypes, and visual designs that align with your brand and user expectations.</p>
+                    </div>
+                    <div class="process-step" data-step="3">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Develop</h3>
+                        <p class="step-description">Building with modern technologies, following best practices for code quality, performance, and security.</p>
+                    </div>
+                    <div class="process-step" data-step="4">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Launch</h3>
+                        <p class="step-description">Thorough testing, deployment, and post-launch monitoring to ensure everything runs smoothly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="process-content">
+                <h2 class="section-title">Our <span class="highlight">Process</span></h2>
+                <p class="section-subtitle">A structured approach to deliver exceptional results on time and within budget</p>
+                <div class="process-highlight">
+                    <p>Each project follows our proven methodology, ensuring transparency, quality, and client satisfaction at every stage.</p>
+                </div>
+                <div class="process-stats">
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">On Time Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle">Real-world solutions that demonstrate our expertise and creativity</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-item large" onclick="window.open('https://weather-lime-one.vercel.app/', '_blank')">
+                <div class="project-image" data-project="weather">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Real-time weather visualization with interactive maps and detailed forecasts</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" onclick="window.open('https://stack-up-wheat.vercel.app/#home/', '_blank')">
+                <div class="project-image" data-project="coding">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Online Coding Platform</h3>
+                        <p class="project-description">Interactive learning environment with code execution and progress tracking</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" onclick="window.open('https://task-management-mauve-rho.vercel.app//', '_blank')">
+                <div class="project-image" data-project="task">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative project management with real-time updates and team features</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Material UI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item large" onclick="window.open('https://monster-energy-3d-store-xbb3r.theopenbuilder.app//', '_blank')">
+                <div class="project-image" data-project="ecommerce">
+                    <div class="project-overlay">
+                        <h3 class="project-title">E-commerce for Monster Energy</h3>
+                        <p class="project-description">High-performance online store with product customization and payment integration</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Stripe</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Techora Section -->
+    <section class="why-techora" id="why">
+        <div class="why-container">
+            <div class="why-content">
+                <h2 class="section-title">Why <span class="highlight">Techora</span></h2>
+                <p class="section-subtitle">We combine technical expertise with creative vision to deliver outstanding results</p>
+                
+                <div class="why-features">
+                    <div class="why-feature">
+                        <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                        <div class="why-text">
+                            <h3>Speed & Performance</h3>
+                            <p>We optimize every aspect for fast loading and smooth interactions, crucial for user retention and SEO.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="why-text">
+                            <h3>Quality & Reliability</h3>
+                            <p>Rigorous testing, clean code practices, and continuous monitoring ensure reliable, bug-free solutions.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-icon"><i class="fas fa-users"></i></div>
+                        <div class="why-text">
+                            <h3>Client-Focused Approach</h3>
+                            <p>We collaborate closely with you, ensuring the final product aligns perfectly with your vision and goals.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-icon"><i class="fas fa-code"></i></div>
+                        <div class="why-text">
+                            <h3>Modern Tech Stack</h3>
+                            <p>Using the latest frameworks and tools to build scalable, maintainable, and future-proof solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-visual">
+                <div class="floating-element el1"></div>
+                <div class="floating-element el2"></div>
+                <div class="why-image-placeholder">
+                    <div class="why-stats">
+                        <div class="why-stat">
+                            <div class="stat-value">40%</div>
+                            <div class="stat-label">Faster Load Times</div>
+                        </div>
+                        <div class="why-stat">
+                            <div class="stat-value">99.9%</div>
+                            <div class="stat-label">Uptime Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                <p class="section-subtitle">Ready to start your next project? Get in touch with our team</p>
+                <p class="contact-text">We'll respond within 24 hours to discuss your project requirements and how we can help bring your vision to life.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:Techora90@gmail.com">Techora90@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919990011686">+91 99900 11686</a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Project Subject</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div class="contact-alternative">
+                    <p>Prefer to schedule a meeting?</p>
+                    <button class="btn-secondary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/techora90/30min'});">
+                        <span>Book a Call</span>
+                        <i class="fas fa-calendar-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">Techora<span class="logo-dot">.</span></a>
+                <p class="footer-tagline">Crafting exceptional digital experiences</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">Web App Development</a>
+                    <a href="#services">UI/UX Design</a>
+                    <a href="#services">Performance Optimization</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#process">Our Process</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#why">Why Techora</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Techora. All rights reserved.</p>
+            <p>Designed and developed with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
